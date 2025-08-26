@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payment — API</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header id="hdr">
+    <div class="container topbar">
+      <div class="brand"><div class="logo"><3</div><div>Web Payment</div></div>
+      <div class="chips">
+        <div class="seg">
+          <a class="active" href="./api.html">API</a>
+          <a href="./panel.html">Panel</a>
+        </div>
+        <span class="chip hide-mobile">Status <span class="dot"></span> Online</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="crumbs"><span>BetaBotz</span><span class="sep">›</span><span>Pembayaran API</span></div>
+      <h1></h1>
+      <p class="sub"></p>
+
+    <section class="grid">
+      <div class="card col-8">
+        <h3>QRIS Pembayaran</h3>
+        <p class="muted">Scan atau buka gambar penuh untuk melakukan pembayaran.</p>
+        <div class="qris">
+          <img alt="QRIS API" src="./qris-api.jpg">
+        </div>
+        <div class="actions">
+          <button class="btn primary" onclick="openImage('./qris-api.jpg')">Buka Gambar</button>
+          <!-- <button class="btn" onclick="copyText('https://api.betabotz.eu.org/api/tools/uploader-get?id=QWdBQ0FnVUFBeUVHQUFTclJWR2lBQUVDeE5wb2xBcEJIbzR3REd2bG05cEg0OG9OWWt4ckp3QUN2OE14R3g4S29GVEd1eVpIUG50WkhBRUFBd0lBQTNrQUF6WUU6OjU4NjYyNzM5Njg6QUFFcHVLbFNGRW9Pd2ZScF9kUG9zVlZPbWVCa2JybWhlMFk=&mime=image/jpeg')">Salin Link</button> -->
+        </div>
+      </div>
+
+      <div class="card col-4">
+        <h3>Instruksi</h3>
+        <div class="list">
+          <div class="row"><span class="dot"></span><span>Kirimkan bukti transfer (URL gambar/ss).</span></div>
+          <div class="row"><span class="dot"></span><span>Kirimkan <b>username API</b>.</span></div>
+          <div class="row"><span class="dot"></span><span>Tunggu proses dari admin, kami akan kabari.</span></div>
+        </div>
+      </div>
+
+       <div class="card col-4">
+        <h3>Kontak</h3>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <div style="width:34px;height:34px;border-radius:10px;background:#132041;display:grid;place-items:center;font-weight:800">BTZ</div>
+            <div><div style="font-weight:800">Admin</div><div class="muted" style="font-size:12px">Support</div></div>
+          </div>
+          <a class="btn" href="https://wa.me/62895423183527?text=ask+api+btz" target="_blank" rel="noopener">DM</a>
+        </div>
+      </div>
+
+      <div class="card col-12">
+        <h3>FAQ</h3>
+        <div class="accordion" id="faq">
+          <div class="acc">
+            <button class="acc__summary"><span class="title">Berapa lama proses aktivasi?</span><span class="chev">›</span></button>
+            <div class="acc__content"><div class="acc__inner">Biasanya cepat setelah bukti TF & username diterima.</div></div>
+          </div>
+          <div class="acc">
+            <button class="acc__summary"><span class="title">Jika pembayaran gagal?</span><span class="chev">›</span></button>
+            <div class="acc__content"><div class="acc__inner">Coba ulang atau hubungi admin dengan menyertakan bukti TF.</div></div>
+          </div>
+          <div class="acc">
+            <button class="acc__summary"><span class="title">Metode selain QRIS?</span><span class="chev">›</span></button>
+            <div class="acc__content"><div class="acc__inner">Saat ini fokus QRIS. Metode lain hubungi admin.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+        <span>© <script>document.write(new Date().getFullYear())</script> Payment • API</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
